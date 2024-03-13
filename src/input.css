@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Space Mono regular';
+    font-weight: 400;
+    src: url('./assets/fonts/SpaceMono-Regular.ttf');
+};
+
+@font-face {
+    font-family: 'Space Mono bold';
+    font-weight: 700;
+    src: url('./assets/fonts/SpaceMono-Bold.ttf');
+};

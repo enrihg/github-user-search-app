@@ -544,20 +544,256 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.mb-9 {
+  margin-bottom: 2.25rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.flex {
+  display: flex;
 }
 
-.font-bold {
+.size-\[20px\] {
+  width: 20px;
+  height: 20px;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-\[7px\] {
+  gap: 7px;
+}
+
+.gap-\[6px\] {
+  gap: 6px;
+}
+
+.gap-\[5px\] {
+  gap: 5px;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
+}
+
+.rounded-\[15px\] {
+  border-radius: 15px;
+}
+
+.bg-blue1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 121 255 / var(--tw-bg-opacity));
+}
+
+.bg-blue5 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 42 71 / var(--tw-bg-opacity));
+}
+
+.bg-blue6 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 29 47 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-\[12\.5px\] {
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
+}
+
+.pt-\[6\.5px\] {
+  padding-top: 6.5px;
+}
+
+.pr-\[7px\] {
+  padding-right: 7px;
+}
+
+.pb-\[7\.5px\] {
+  padding-bottom: 7.5px;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.font-body-bold {
+  font-family: Space Mono Bold, sans-serif;
+}
+
+.font-body-regular {
+  font-family: Space Mono Regular, sans-serif;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
+}
+
+.text-\[26px\] {
+  font-size: 26px;
+}
+
+.tracking-\[2\.5px\] {
+  letter-spacing: 2.5px;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@font-face {
+  font-family: 'Space Mono regular';
+
+  font-weight: 400;
+
+  src: url('./assets/fonts/SpaceMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Space Mono bold';
+
   font-weight: 700;
+
+  src: url('./assets/fonts/SpaceMono-Bold.ttf');
 }
 
-.underline {
-  text-decoration-line: underline;
+.placeholder\:text-white::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+.placeholder\:text-white::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.before\:h-5::before {
+  content: var(--tw-content);
+  height: 1.25rem;
+}
+
+.before\:h-10::before {
+  content: var(--tw-content);
+  height: 2.5rem;
+}
+
+.before\:w-5::before {
+  content: var(--tw-content);
+  width: 1.25rem;
+}
+
+.before\:w-10::before {
+  content: var(--tw-content);
+  width: 2.5rem;
+}
+
+.before\:text-white::before {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.before\:content-\[aaa\]::before {
+  --tw-content: aaa;
+  content: var(--tw-content);
+}
+
+.before\:content-\[\*\]::before {
+  --tw-content: *;
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'asas\'\]::before {
+  --tw-content: 'asas';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'asssssssas\'\]::before {
+  --tw-content: 'asssssssas';
+  content: var(--tw-content);
+}
+
+.before\:content-\[url\(\.\/src\/assets\/images\/icon-search\.svg\)\]::before {
+  --tw-content: url(./src/assets/images/icon-search.svg);
+  content: var(--tw-content);
+}
+
+.before\:content-\[url\(\'\.\/src\/assets\/images\/icon-search\.svg\'\)\]::before {
+  --tw-content: url('./src/assets/images/icon-search.svg');
+  content: var(--tw-content);
+}
+
+.before\:content-\[url\(\'\.\/src\/assets\/images\/icon-sun\.svg\'\)\]::before {
+  --tw-content: url('./src/assets/images/icon-sun.svg');
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'url\(\'\.\/src\/assets\/images\/icon-search\.svg\'\)\'\]::before {
+  --tw-content: 'url('./src/assets/images/icon-search.svg')';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'\.\/src\/assets\/images\/icon-search\.svg\'\]::before {
+  --tw-content: './src/assets/images/icon-search.svg';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\.\/src\/assets\/images\/icon-search\.svg\'\]::after {
+  --tw-content: './src/assets/images/icon-search.svg';
+  content: var(--tw-content);
+}
+
+.after\:content-\[url\(\'\.\/src\/assets\/images\/icon-search\.svg\'\)\]::after {
+  --tw-content: url('./src/assets/images/icon-search.svg');
+  content: var(--tw-content);
+}
+
+.after\:content-\[\.\/src\/assets\/images\/icon-search\.svg\]::after {
+  --tw-content: ./src/assets/images/icon-search.svg;
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'asssssssas\'\]::after {
+  --tw-content: 'asssssssas';
+  content: var(--tw-content);
+};
