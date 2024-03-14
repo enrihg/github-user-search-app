@@ -20,9 +20,9 @@
             </button>
         </div>
         <search class="bg-white dark:bg-blue5 rounded-[15px] pl-4 pt-[6.5px] pr-[7px] pb-[7.5px] drop-shadow-lg">
-            <form action="" class="flex justify-between items-center gap-[5px]">
+            <form action="#" class="form flex justify-between items-center gap-[5px]">
                 <img src="./src/assets/images/icon-search.svg" alt="search icon" class="w-5 h-5">
-                <input type="search" name="q" size="22" placeholder="Search Github username..."
+                <input id="input" type="search" name="q" size="22" placeholder="Search Github username..."
                     class="dark:bg-blue5 placeholder:text-blue2 dark:placeholder:text-white ">
                 <button type="submit" class="bg-blue1 text-white font-body-bold px-4 py-[12.5px] rounded-[10px]">Search</button>
             </form>
@@ -31,37 +31,37 @@
     <main class="mt-4 pt-[32px] px-6 pb-8 bg-white dark:bg-blue5 rounded-[15px] drop-shadow-lg">
         <section>
             <div class="flex h-[70px] items-center gap-5 mb-[33px]">
-                <img src="#" alt="profile pic">
+                <img id="avatar" class="w-[70px] h-[70px] " src="#" alt="profile pic">
                 <div>
-                    <h2 class="text-[16px] font-body-bold">The Octocat</h2>
-                    <h3 class="text-blue1">@octocat</h3>
-                    <p>Joined 25 Jan 2011</p>
+                    <h2 id="name" class="text-[16px] font-body-bold"></h2>
+                    <h3 id="login" class="text-blue1"></h3>
+                    <p id="joined">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus enim nostrum suscipit</p>
                 </div>
             </div>
-            <p class="leading-[25px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro exercitationem sit
-                aliquam</p>
+            <p id="bio" class="leading-[25px]"></p>
         </section>
         <section class="grid grid-cols-3 my-6 rounded-[10px] bg-white2 dark:bg-blue6 py-[18px] px-[14px] text-center">
             <div class="flex flex-col">
-                <label for="repos" class="text-[11px]">Repos</label>
-                <span id="repos" class="font-body-bold text-blue4 dark:text-white text-[16px]">8</span>
+                <label class="text-[11px]">Repos</label>
+                <span id="repos" class="font-body-bold text-blue4 dark:text-white text-[16px]"></span>
             </div>
             <div class="flex flex-col">
                 <label for="followers" class="text-[11px]">Followers</label>
-                <span id="followers" class="font-body-bold text-blue4 dark:text-white text-[16px]">3938</span>
+                <span id="followers" class="font-body-bold text-blue4 dark:text-white text-[16px]"></span>
             </div>
             <div class="flex flex-col">
                 <label for="following" class="text-[11px]">Following</label>
-                <span id="following" class="font-body-bold text-blue4 dark:text-white text-[16px]">9</span>
+                <span id="following" class="font-body-bold text-blue4 dark:text-white text-[16px]"></span>
             </div>
         </section>
         <section>
-            <div class="flex gap-[17px] mb-4"><img src="./src/assets/images/icon-location.svg" alt="location">San Francisco</div>
-            <div class="flex gap-[13px] mb-4"><img src="./src/assets/images/icon-website.svg" alt="website">https://github.blog</div>
-            <div class="flex gap-[13px] mb-4"><img src="./src/assets/images/icon-twitter.svg" alt="twitter">Not available</div>
-            <div class="flex gap-[13px] mb-4"><img src="./src/assets/images/icon-company.svg" alt="company">@github</div>
+            <div class="flex gap-[17px] mb-4"><img src="./src/assets/images/icon-location.svg" alt="location"><span id="location"></span></div>
+            <div class="flex gap-[13px] mb-4"><img src="./src/assets/images/icon-website.svg" alt="website"><span id="website"></span></div>
+            <div class="flex gap-[13px] mb-4"><img src="./src/assets/images/icon-twitter.svg" alt="twitter"><span id="twitter"></span></div>
+            <div class="flex gap-[13px] mb-4"><img src="./src/assets/images/icon-company.svg" alt="company"><span id="company"></span></div>
         </section>
     </main>
+    <script src="./src/index.js"></script>
 </body>
 
 </html>
