@@ -25,7 +25,6 @@ function fetchUser(url) {
 fetchUser(url + 'octocat');
 form === null || form === void 0 ? void 0 : form.addEventListener('submit', function (e) {
     e.preventDefault();
-    console.log(input.value);
     var user = input.value;
     fetchUser(url + user);
 });
@@ -34,13 +33,13 @@ function updateUI(data) {
     userName.innerText = user.name;
     login.innerText = user.login;
     joined.innerText = user.created_at;
-    bio.innerText = user.bio; //ojó acá
+    user.bio === null ? bio.innerText = 'Bio hasn\'t been updated yet :)' : bio.innerText = user.bio; //fdsadfdsadsff
     repos.innerText = user.public_repos;
     followers.innerText = user.followers;
     following.innerText = user.following;
-    loc.innerText = user.location;
-    website.innerText = user.blog;
-    twitter.innerHTML = user.twitter_username;
-    company.innerText = user.company;
+    user.location === null ? loc.innerText = 'Not Available' : loc.innerText = user.location;
+    user.blog === '' ? website.innerText = 'Not Available' : website.innerText = user.blog;
+    user.twitter_username === null ? twitter.innerText = 'Not Available' : twitter.innerText = user.twitter_username;
+    user.company === null ? company.innerText = 'Not Available' : company.innerText = user.company;
     avatar.src = user.avatar_url;
 }
