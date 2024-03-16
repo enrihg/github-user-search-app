@@ -31,9 +31,10 @@ form === null || form === void 0 ? void 0 : form.addEventListener('submit', func
 function updateUI(data) {
     var user = data;
     userName.innerText = user.name;
-    login.innerText = user.login;
-    joined.innerText = user.created_at;
-    user.bio === null ? bio.innerText = 'Bio hasn\'t been updated yet :)' : bio.innerText = user.bio; //fdsadfdsadsff
+    login.innerText = "@".concat(user.login);
+    var date = new Date(user.created_at);
+    joined.innerText = "Joined ".concat(date.getDate(), " ").concat(new Intl.DateTimeFormat('en-US', { month: 'short' }).format(date), " ").concat(date.getFullYear());
+    user.bio === null ? bio.innerText = 'Bio hasn\'t been updated yet :)' : bio.innerText = user.bio;
     repos.innerText = user.public_repos;
     followers.innerText = user.followers;
     following.innerText = user.following;
