@@ -8,8 +8,8 @@
     <title>Github User Search App</title>
 </head>
 
-<body class="font-body-regular bg-white2 dark:bg-blue6 text-blue2 dark:text-white text-[13px] pt-[30px] px-6">
-    <header>
+<body class="font-body-regular bg-white2 dark:bg-blue6 text-blue2 dark:text-white text-[13px] sm:text-[15px] pt-[30px] px-6">
+    <header class="max-w-[573px] mx-auto ">
         <div class="flex justify-between mb-9">
             <h1 class="font-body-bold text-blue5 dark:text-white text-[26px]">devfinder</h1>
             <button class="font-body-bold tracking-[2.5px]">
@@ -19,46 +19,48 @@
                 </span>
             </button>
         </div>
-        <search class="bg-white dark:bg-blue5 rounded-[15px] pl-4 pt-[6.5px] pr-[7px] pb-[7.5px] drop-shadow-lg">
-            <form action="#" class="form flex justify-between items-center gap-[5px]">
-                <img src="./src/assets/images/icon-search.svg" alt="search icon" class="w-5 h-5">
-                <input id="input" type="search" name="q" size="22" placeholder="Search Github username..."
-                    class="dark:bg-blue5 placeholder:text-blue2 dark:placeholder:text-white ">
+        <search class="bg-white dark:bg-blue5 rounded-[15px] pl-4 sm:pl-8 pt-[6.5px] sm:pt-[9.5px] pr-[7px] sm:pr-[10px] pb-[7.5px] sm:pb-[9.5px] drop-shadow-lg">
+            <form action="#" class="form flex justify-between items-center">
+                <div class="flex gap-[5px] sm:gap-6">
+                    <img src="./src/assets/images/icon-search.svg" alt="search icon" class="w-5 h-5 sm:w-6 sm:h-6">
+                    <input id="input" type="search" name="q" size="22" placeholder="Search Github username..."
+                        class="dark:bg-blue5 placeholder:text-blue2 dark:placeholder:text-white ">
+                </div>
                 <button type="submit" class="bg-blue1 text-white font-body-bold px-4 py-[12.5px] rounded-[10px]">Search</button>
             </form>
         </search>
     </header>
-    <main class="mt-4 pt-[32px] px-6 pb-8 bg-white dark:bg-blue5 rounded-[15px] drop-shadow-lg">
+    <main class="max-w-[573px] mx-auto mt-4 pt-[32px] px-6 sm:px-10 pb-8 bg-white dark:bg-blue5 rounded-[15px] drop-shadow-lg">
         <section>
-            <div class="flex items-center gap-5 mb-[33px]">
-                <img id="avatar" class="w-[70px] h-[70px] rounded-full" src="#" alt="profile pic">
+            <div class="flex items-center gap-5 sm:gap-10 mb-[33px] sm:mb-[24px]">
+                <img id="avatar" class="w-[70px] h-[70px] sm:w-[117px] sm:h-[117px] rounded-full" src="#" alt="profile pic">
                 <div>
-                    <h2 id="name" class="text-[16px] font-body-bold"></h2>
-                    <h3 id="login" class="mt-1 text-blue1"></h3>
+                    <h2 id="name" class="text-[16px] sm:text-[26px] font-body-bold"></h2>
+                    <h3 id="login" class="mt-1 text-blue1 sm:text-[16px]"></h3>
                     <p id="joined" class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus enim nostrum suscipit</p>
                 </div>
             </div>
             <p id="bio" class="leading-[25px]"></p>
         </section>
-        <section class="grid grid-cols-3 my-6 rounded-[10px] bg-white2 dark:bg-blue6 py-[18px] px-[14px] text-center">
+        <section class="grid grid-cols-3 my-6 sm:my-[32px] rounded-[10px] bg-white2 dark:bg-blue6 py-[18px] px-[14px] sm:px-[32px] text-center">
             <div class="flex flex-col gap-2">
-                <label class="text-[11px]">Repos</label>
-                <span id="repos" class="font-body-bold text-blue4 dark:text-white text-[16px]"></span>
+                <label class="text-[11px] sm:text-start">Repos</label>
+                <span id="repos" class="font-body-bold text-blue4 dark:text-white text-[16px] sm:text-[22px] sm:text-start"></span>
             </div>
             <div class="flex flex-col gap-2">
-                <label for="followers" class="text-[11px]">Followers</label>
-                <span id="followers" class="font-body-bold text-blue4 dark:text-white text-[16px]"></span>
+                <label for="followers" class="text-[11px] sm:text-start">Followers</label>
+                <span id="followers" class="font-body-bold text-blue4 dark:text-white text-[16px] sm:text-[22px] sm:text-start"></span>
             </div>
             <div class="flex flex-col gap-2">
-                <label for="following" class="text-[11px]">Following</label>
-                <span id="following" class="font-body-bold text-blue4 dark:text-white text-[16px]"></span>
+                <label for="following" class="text-[11px] sm:text-start">Following</label>
+                <span id="following" class="font-body-bold text-blue4 dark:text-white text-[16px] sm:text-[22px] sm:text-start"></span>
             </div>
         </section>
-        <section>
+        <section class="grid sm:grid-cols-2">
             <div class="flex gap-[17px] mb-4"><img src="./src/assets/images/icon-location.svg" alt="location"><span id="location"></span></div>
-            <div class="flex gap-[13px] mb-4"><img src="./src/assets/images/icon-website.svg" alt="website"><span id="website"></span></div>
-            <div class="flex gap-[13px] mb-4"><img src="./src/assets/images/icon-twitter.svg" alt="twitter"><span id="twitter"></span></div>
-            <div class="flex gap-[13px] mb-4"><img src="./src/assets/images/icon-company.svg" alt="company"><span id="company"></span></div>
+            <div class="flex gap-[13px] mb-4 sm:col-start-1 "><img src="./src/assets/images/icon-website.svg" alt="website"><span id="website"></span></div>
+            <div class="flex gap-[13px] mb-4 sm:col-start-2 sm:row-start-1"><img src="./src/assets/images/icon-twitter.svg" alt="twitter"><span id="twitter"></span></div>
+            <div class="flex gap-[13px] mb-4 sm:col-start-2"><img src="./src/assets/images/icon-company.svg" alt="company"><span id="company"></span></div>
         </section>
     </main>
     <script src="./src/index.js"></script>
