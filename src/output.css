@@ -544,14 +544,27 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.relative {
+  position: relative;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-4 {
@@ -572,6 +585,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mr-0 {
+  margin-right: 0px;
 }
 
 .flex {
@@ -615,6 +632,14 @@ video {
   flex-direction: column;
 }
 
+.place-content-center {
+  place-content: center;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -645,10 +670,6 @@ video {
 
 .gap-\[5px\] {
   gap: 5px;
-}
-
-.justify-self-start {
-  justify-self: start;
 }
 
 .rounded-\[10px\] {
@@ -733,6 +754,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-body-bold {
@@ -845,28 +870,24 @@ video {
     margin-bottom: 24px;
   }
 
-  .sm\:h-\[117px\] {
-    height: 117px;
-  }
-
   .sm\:h-6 {
     height: 1.5rem;
   }
 
-  .sm\:w-\[117px\] {
-    width: 117px;
+  .sm\:h-\[117px\] {
+    height: 117px;
   }
 
   .sm\:w-6 {
     width: 1.5rem;
   }
 
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .sm\:w-\[117px\] {
+    width: 117px;
   }
 
-  .sm\:justify-start {
-    justify-content: flex-start;
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:gap-10 {
@@ -877,17 +898,9 @@ video {
     gap: 1.5rem;
   }
 
-  .sm\:self-end {
-    align-self: flex-end;
-  }
-
-  .sm\:justify-self-end {
-    justify-self: end;
-  }
-
-  .sm\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .sm\:px-\[32px\] {
@@ -895,9 +908,9 @@ video {
     padding-right: 32px;
   }
 
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .sm\:pb-\[9\.5px\] {
@@ -920,54 +933,130 @@ video {
     text-align: start;
   }
 
-  .sm\:text-\[26px\] {
-    font-size: 26px;
+  .sm\:text-\[15px\] {
+    font-size: 15px;
   }
 
   .sm\:text-\[16px\] {
     font-size: 16px;
   }
 
-  .sm\:text-\[15px\] {
-    font-size: 15px;
-  }
-
   .sm\:text-\[22px\] {
     font-size: 22px;
+  }
+
+  .sm\:text-\[26px\] {
+    font-size: 26px;
+  }
+
+  .sm\:text-\[18px\] {
+    font-size: 18px;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:justify-start {
-    justify-content: flex-start;
+  .md\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
-  .md\:self-start {
-    align-self: flex-start;
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
   }
 
-  .md\:justify-self-start {
-    justify-self: start;
+  .lg\:relative {
+    position: relative;
   }
 
-  .md\:justify-self-end {
+  .lg\:right-0 {
+    right: 0px;
+  }
+
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .lg\:w-\[76\%\] {
+    width: 76%;
+  }
+
+  .lg\:w-\[75\.5\%\] {
+    width: 75.5%;
+  }
+
+  .lg\:w-\[75\.4\%\] {
+    width: 75.4%;
+  }
+
+  .lg\:w-\[75\.55\%\] {
+    width: 75.55%;
+  }
+
+  .lg\:max-w-\[730px\] {
+    max-width: 730px;
+  }
+
+  .lg\:max-w-\[75\%\] {
+    max-width: 75%;
+  }
+
+  .lg\:max-w-\[50\%\] {
+    max-width: 50%;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:place-content-center {
+    place-content: center;
+  }
+
+  .lg\:place-content-end {
+    place-content: end;
+  }
+
+  .lg\:place-items-end {
+    place-items: end;
+  }
+
+  .lg\:place-items-center {
+    place-items: center;
+  }
+
+  .lg\:place-self-end {
+    place-self: end;
+  }
+
+  .lg\:justify-self-end {
     justify-self: end;
   }
 
-  .md\:pl-8 {
-    padding-left: 2rem;
+  .lg\:text-right {
+    text-align: right;
   }
 
-  .md\:pr-\[10px\] {
-    padding-right: 10px;
-  }
-
-  .md\:pt-\[9\.5px\] {
-    padding-top: 9.5px;
-  }
-
-  .md\:pb-\[9\.5px\] {
-    padding-bottom: 9.5px;
+  .lg\:align-middle {
+    vertical-align: middle;
   }
 }
 

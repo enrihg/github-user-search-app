@@ -53,7 +53,7 @@ function updateUI(data: any): void {
     login.innerText = `@${user.login}`;
     const date = new Date(user.created_at);
     joined.innerText = `Joined ${date.getDate()} ${new Intl.DateTimeFormat('en-US', { month: 'short' }).format(date)} ${date.getFullYear()}`;
-    user.bio === null ? bio.innerText = 'Bio hasn\'t been updated yet :)' : bio.innerText = user.bio;
+    user.bio === null ? bio.innerText = 'This profile has no bio' : bio.innerText = user.bio;
     repos.innerText = user.public_repos;
     followers.innerText = user.followers;
     following.innerText = user.following;

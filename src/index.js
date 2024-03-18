@@ -34,7 +34,7 @@ function updateUI(data) {
     login.innerText = "@".concat(user.login);
     var date = new Date(user.created_at);
     joined.innerText = "Joined ".concat(date.getDate(), " ").concat(new Intl.DateTimeFormat('en-US', { month: 'short' }).format(date), " ").concat(date.getFullYear());
-    user.bio === null ? bio.innerText = 'Bio hasn\'t been updated yet :)' : bio.innerText = user.bio;
+    user.bio === null ? bio.innerText = 'This profile has no bio' : bio.innerText = user.bio;
     repos.innerText = user.public_repos;
     followers.innerText = user.followers;
     following.innerText = user.following;
