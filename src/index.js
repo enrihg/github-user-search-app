@@ -1,3 +1,6 @@
+var themeSwitcher = document.getElementById('theme-switcher');
+var lightDark = document.getElementById('light-dark');
+var lighDarkIcon = document.getElementById('light-dark-icon');
 var avatar = document.getElementById('avatar');
 var userName = document.getElementById('name'); //se usó el non-null assertion operator, le decimos a Typescript 'tranqui esta variable nunca será nula'
 var login = document.getElementById('login');
@@ -13,6 +16,17 @@ var company = document.getElementById('company');
 var input = document.getElementById('input'); //type assertion, leer más
 var form = document.querySelector('.form');
 var url = 'https://api.github.com/users/';
+themeSwitcher === null || themeSwitcher === void 0 ? void 0 : themeSwitcher.addEventListener('click', function () {
+    document.documentElement.classList.toggle('dark');
+    if (document.documentElement.classList.contains('dark')) {
+        lightDark.innerText = 'LIGHT';
+        lighDarkIcon.src = './src/assets/images/icon-sun.svg';
+    }
+    else {
+        lightDark.innerText = 'DARK';
+        lighDarkIcon.src = './src/assets/images/icon-moon.svg';
+    }
+});
 function fetchUser(url) {
     fetch(url)
         .then(function (res) {

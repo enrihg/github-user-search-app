@@ -1,3 +1,6 @@
+const themeSwitcher = document.getElementById('theme-switcher')! as HTMLButtonElement;
+const lightDark = document.getElementById('light-dark')!;
+const lighDarkIcon = document.getElementById('light-dark-icon')! as HTMLImageElement;
 const avatar = document.getElementById('avatar')! as HTMLImageElement;
 const userName = document.getElementById('name')!; //se usó el non-null assertion operator, le decimos a Typescript 'tranqui esta variable nunca será nula'
 const login = document.getElementById('login')!;
@@ -28,6 +31,19 @@ type User = {
     twitter_username: string,
     company: string
 }
+
+themeSwitcher?.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark')
+    if (document.documentElement.classList.contains('dark')) {
+        lightDark.innerText = 'LIGHT';
+        lighDarkIcon.src = './src/assets/images/icon-sun.svg';
+    } else {
+        lightDark.innerText = 'DARK';
+        lighDarkIcon.src = './src/assets/images/icon-moon.svg';
+    } 
+})
+
+
 
 function fetchUser(url: string): void {
     fetch(url)
