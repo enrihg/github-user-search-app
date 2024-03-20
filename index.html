@@ -8,28 +8,31 @@
 </head>
 
 <body class="font-body-regular bg-white2 dark:bg-blue6 text-blue2 dark:text-white text-[13px] sm:text-[15px] pt-[30px] px-6">
-    <header class="max-w-[573px] lg:max-w-[730px] mx-auto">
+    <header class="max-w-[450px] sm:max-w-[573px] lg:max-w-[730px] mx-auto">
         <div class="flex justify-between mb-9">
             <h1 class="font-body-bold text-blue5 dark:text-white text-[26px]">devfinder</h1>
             <button id="theme-switcher" class="font-body-bold tracking-[2.5px]">
-                <span class="flex gap-4">
-                    <span id="light-dark">LIGHT</span>
-                    <img id="light-dark-icon" class="size-[20px]" src="./src/assets/images/icon-sun.svg" alt="light mode">
+                <span class="flex gap-4 hover:text-blue2-hover dark:hover:text-white-1-hover">
+                    <span id="light-dark">DARK</span>
+                    <img id="light-dark-icon" class="size-[20px]" src="./src/assets/images/icon-moon.svg" alt="light mode">
                 </span>
             </button>
         </div>
         <search class="bg-white dark:bg-blue5 rounded-[15px] pl-4 sm:pl-8 pt-[6.5px] sm:pt-[9.5px] pr-[7px] sm:pr-[10px] pb-[7.5px] sm:pb-[9.5px] drop-shadow-lg">
             <form action="#" class="form flex justify-between items-center">
-                <div class="flex gap-[5px] sm:gap-6">
+                <div class="flex gap-[10px] items-center sm:gap-6">
                     <img src="./src/assets/images/icon-search.svg" alt="search icon" class="w-5 h-5 sm:w-6 sm:h-6">
-                    <input id="input" type="search" name="q" size="22" placeholder="Search Github username..."
-                        class="dark:bg-blue5 placeholder:text-blue2 dark:placeholder:text-white sm:text-[18px]">
+                    <div>
+                        <input id="input" type="search" name="q" aria-label="Search Github username" size="22" placeholder="Search Github username"
+                            class="hover:cursor-pointer dark:bg-blue5 placeholder:text-blue2 dark:placeholder:text-white sm:text-[18px]">
+                        <div id="error" class="hidden text-[#f74646] text-[14px] font-bold">No results</div>
+                    </div>
                 </div>
-                <button type="submit" class="bg-blue1 text-white font-body-bold px-4 sm:px-6 py-[12.5px] rounded-[10px]">Search</button>
+                <button type="submit" class="bg-blue1 hover:bg-blue1-hover text-white font-body-bold px-4 sm:px-6 py-[12.5px] rounded-[10px]">Search</button>
             </form>
         </search>
     </header>
-    <main class="grid max-w-[573px] lg:max-w-[730px] mx-auto mt-4 pt-[32px] px-6 sm:px-10 pb-8 bg-white dark:bg-blue5 rounded-[15px] drop-shadow-lg">
+    <main class="grid max-w-[450px] sm:max-w-[573px] lg:max-w-[730px] mx-auto mt-4 pt-[32px] px-6 sm:px-10 pb-8 bg-white dark:bg-blue5 rounded-[15px] drop-shadow-lg">
         <section class="lg:grid">
             <div class="flex items-center gap-5 sm:gap-10 mb-[33px] sm:mb-[24px] lg:mb-0">
                 <img id="avatar" class="w-[70px] h-[70px] sm:w-[117px] sm:h-[117px] rounded-full" src="#" alt="profile pic">
@@ -55,9 +58,9 @@
                 <span id="following" class="font-body-bold text-blue4 dark:text-white text-[16px] sm:text-[22px] sm:text-start"></span>
             </div>
         </section>
-        <section class="grid sm:grid-cols-2 lg:w-[75%] lg:justify-self-end">
+        <section class="grid sm:grid-cols-2 gap-x-4 lg:w-[75%] lg:justify-self-end">
             <div class="flex gap-[17px] mb-4"><img src="./src/assets/images/icon-location.svg" alt="location"><span id="location"></span></div>
-            <div class="flex gap-[13px] mb-4 sm:col-start-1 "><img src="./src/assets/images/icon-website.svg" alt="website"><span id="website"></span></div>
+            <div class="flex gap-[13px] mb-4 sm:col-start-1 hover:underline"><img src="./src/assets/images/icon-website.svg" alt="website"><a id="website" class="truncate" href="" target="_blank"></a></div>
             <div class="flex gap-[13px] mb-4 sm:col-start-2 sm:row-start-1"><img src="./src/assets/images/icon-twitter.svg" alt="twitter"><span id="twitter"></span></div>
             <div class="flex gap-[13px] mb-4 sm:col-start-2"><img src="./src/assets/images/icon-company.svg" alt="company"><span id="company"></span></div>
         </section>
